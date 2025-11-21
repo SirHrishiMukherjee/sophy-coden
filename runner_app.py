@@ -716,7 +716,7 @@ function startStream(program) {
     const es = new EventSource(`/stream/${program}`);
 
     es.onmessage = function(event) {
-        consoleBox.textContent += event.data + "\\n";
+        consoleBox.textContent += event.data + "\n";
         consoleBox.scrollTop = consoleBox.scrollHeight;
     };
 
